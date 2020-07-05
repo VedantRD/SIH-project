@@ -1,0 +1,27 @@
+{
+  "name": "networkapp",
+  "version": "1.0.0",
+  "description": "testing backend",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app",
+    "server": "nodemon app",
+    "networkdetector": "npm start --prefix networkdetector",
+    "dev": "concurrently \"npm run server\" \"npm run networkdetector\""
+  },
+  "author": "rohan bhutada",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.21",
+    "morgan": "^1.10.0",
+    "validator": "^13.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
